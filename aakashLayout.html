@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshma World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 0.1mm solid red;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: 0.75fr 2fr;
+        }
+
+        .upper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+            height: 4rem;
+        }
+        
+        .lower {
+            display: grid;
+            grid-template-rows: 1fr 7fr;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 4fr 2fr;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper">
+            <div class="email">cds</div>
+            <div class="phone">sdd</div>
+            <div class="space"></div>
+            <div class="sendemail"></div>
+            <div class="space2"></div>
+        </div>
+        <div class="lower">
+            <div class="navbar">
+                <div class="about"></div>
+                <div class="home about"></div>
+
+            </div>
+            <div class="content">
+                <div class="sidebar"></div>
+                <div class="middle">
+
+                </div>
+                <div class="product">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

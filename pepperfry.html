@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .main {
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            
+
+        }
+
+        .box1 {
+            display: grid;
+            background-color: black;
+            grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+
+
+        }
+
+        .box1 .team1 {
+            height: 1rem;
+        }
+
+        .box2 {
+            display: grid;
+            grid-template-columns: 20ch 30ch 30ch 20ch 20ch 30ch 30ch 40ch 20ch;
+            border: .1mm solid black;
+            height: 2rem;
+            background-color: whitesmoke;
+
+
+        }
+
+        .box3 {
+            display: grid;
+            border: .1mm solid black;
+            justify-content: center;
+            grid-template-columns: 20ch 40ch 120ch 10ch 10ch 10ch 10ch 20ch;
+        }
+
+        .box3 .item3 .search {
+            display: grid;
+            border: 0.1mm solid black;
+            height: 2rem;
+            width: 95%;
+
+
+
+        }
+
+        .box3 .item4 .item5 .item6 .item7 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box4 {
+            display: grid;
+            height: 3rem;
+            border: black;
+            grid-template-columns: 20ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 15ch 25ch;
+        }
+    
+
+        .box5 {
+            display: grid;
+            grid-template-columns: 1fr 6fr 2fr 1fr;
+
+        }
+
+        .box5 .item12 img {
+            display: grid;
+            height: 40rem;
+            width: 98%;
+        }
+
+        .box5 .item13 img {
+            display: grid;
+            height: 40rem;
+            width: 100%;
+        }
+
+        .box6 {
+            display: grid;
+            grid-template-columns: 1fr 8fr 1fr;
+        }
+
+
+        .itemy,
+        .itemx,
+        .itemz {
+            /* border: 2px solid red; */
+        }
+
+
+        .box6 .itemy img {
+            display: flex;
+            height: 10rem;
+            width: 100%;
+        }
+
+        .box7 {
+            display: grid;
+            border: .1mm black;
+
+        }
+
+        .hover-content {
+            width: 85vh;
+            height: 50vh;
+            border: 2px solid red;
+            background-color: white;
+            transform: translate(20%, -150%);
+        }
+
+        .hover-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="box1">
+            <div class="team1"></div>
+            <div class="team2"></div>
+            <div class="team3"></div>
+            <div class="team4"></div>
+            <div class="team5"></div>
+        </div>
+        <div class="box2">
+            <div class="item01"></div>
+            <div class="item02">sell on pepperfry</div>
+            <div class="item03">Become a franchaisee</div>
+            <div class="item04">Buy in Bulk</div>
+            <div class="item05">Find a Studio</div>
+            <div class="item06">Find Design inspiration</div>
+            <div class="item07"></div>
+            <div class="item08">Enter pincode, find pepprefry Studio</div>
+            <div class="item09"></div>
+
+        </div>
+        <div class="box3">
+            <div class="item1"></div>
+            <div class="item2">
+                <img src="images/img.svg" alt="">
+            </div>
+            <div class="item3">
+                <div class="search">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="item4">
+                <img src="images/icons8-help-60 (1).png" alt="">
+            </div>
+            <div class="item5">
+                <img src="images/ic (per).png" alt="">
+            </div>
+            <div class="item6">
+                <img src="images/ic (heart).png" alt="">
+            </div>
+            <div class="item7">
+                <img src="images/ic (cart).png" alt="">
+            </div>
+            <div class="item8"></div>
+
+
+        </div>
+        <div class="box4">
+            <div class="demo1"></div>
+            <div class="demo2" id="demo2">Furniture</div>
+            <div class="demo3">sofas & Recline</div>
+            <div class="demo4">Beds & Mattersses</div>
+            <div class="demo5">Storage</div>
+            <div class="demo6">Dining & Bar</div>
+            <div class="demo7">Wall Accents</div>
+            <div class="demo8">Decor</div>
+            <div class="demo9">lighting</div>
+            <div class="demo10">Furnishing</div>
+            <div class="demo11">carpets</div>
+            <div class="demo12">Garden & Outdor</div>
+            <div class="demo13">Appliance</div>
+            <div class="demo14">Modular</div>
+            <div class="demo15"></div>
+
+        </div>
+        <div class="box5">
+            <div class="item11"></div>
+            <div class="item12">
+                <img src="images/b5.jpg" alt="">
+            </div>
+            <div class="item13">
+                <img src="images/b5 item.jpg" alt="">
+            </div>
+            <div class="item14"></div>
+        </div>
+        <div class="box6">
+            <div class="itemx"></div>
+            <div class="itemy">
+                <img src="images/b6.jpg" alt="">
+            </div>
+            <div class="itemz"></div>
+        </div>
+        <div class="box7">
+            <div class="team01"></div>
+            <div class="team02"></div>
+            <div class="team03"></div>
+            <div class="team04"></div>
+            <div class="team05"></div>
+            <div class="team06"></div>
+
+        </div>
+        <div class="box8">
+            <div class="team07"></div>
+            <div class="team08"></div>
+            <div class="team09"></div>
+            <div class="team10"></div>
+            <div class="team11"></div>
+            <div class="team12"></div>
+        </div>
+    </section>
+
+    <div class="hover-content" id="hover-content">
+        lfkncler
+    </div>
+
+    <script>
+        var demo2 = document.getElementById("demo2");
+        var content = document.getElementById("hover-content");
+        demo2.onmouseover = function () {
+            content.style.display = "block";
+        }
+        demo2.onmouseout = function () {
+            content.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

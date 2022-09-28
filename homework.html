@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: grid;
+            /* border: 1px solid black; */
+            height: 100vh;
+            width: 100%;
+            grid-template-rows: 2fr 5fr 2fr;
+
+        }
+
+
+        .navbar .footbar {
+            border: 1px solid red;
+            height: 10rem;
+        }
+
+        .middle {
+            border: 1px solid red;
+            height: 40rem;
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+            height: 10rem;
+            width: 100%;
+            font-size: larger;
+            background-color: rgb(233, 238, 240);
+        }
+
+        .navbar .name {
+            font-size: x-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            color: rgb(45, 43, 145);
+            font-style: oblique;
+        }
+
+        ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 70px;
+            margin-top: 2rem;
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        ul li a {
+            font-size: 20px;
+            color: rgb(9, 9, 9);
+            text-decoration: none;
+            transition: 0.5s all;
+        }
+
+        .links ul li a:hover {
+            color: rgb(151, 33, 17);
+            
+            background-color: red;
+            
+        }
+
+
+        .middle img {
+            display: grid;
+            height: 40rem;
+            width: 100%;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+
+        .footer>div {
+            /* border: 2px solid red; */
+            height: 5rem;
+            padding: 40px;
+        }
+
+        .name h1 {
+            height: 200px;
+            color: rgb(134, 48, 8);
+            text-align: center;
+            margin-left: 30px;
+            font-size: 4ch;
+            font-family: serif;
+        }
+
+        .footer h1 {
+            color: blue;
+            font-family: serif;
+        }
+
+        p {
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .content{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+        }
+        .cont :hover{
+           
+           display: flex;
+           border: 2px rgb(56, 16, 132);
+           height: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="name">
+                <h1>SHRI SHUBH MANGALAM ESTATE AGENCY</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#" class="hover-line">Buy</a></li>
+                    <li><a href="#" class="hover-line">Sell</a></li>
+                    <li><a href="#" class="hover-line">Investment</a></li>
+                    <li><a href="#content" class="hover-line cont">Contact</a></li>
+                    <li><a href="/project.html" class="hover-line">about</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="middle">
+            <img src="images/building.jpg" alt="">
+        </div>
+        <div class="footer">
+            <div class="Buy">
+                <h1>Buy a Home</h1>
+                <P> Find your place width an immersive photo
+                    experiance and the most listing, including
+                    things you won't find anywhere else. </P>
+            </div>
+            <div class="sell">
+                <h1>Sell a Home</h1>
+                <p> No matter what path you take to sell
+                    your home, we can help you navigate a
+                    successful sale.</p>
+            </div>
+            <div class="Investment">
+                <h1>Investment</h1>
+                <p>Find your place width an immersive photo
+                    experiance and the most listing, including
+                    things you won't find anywhere else.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="content" id="content">   
+    
+</div>
+
+
+</body>
+
+</html>

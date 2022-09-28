@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* div {
+            border: 0.1mm solid rgb(6, 6, 6);
+        } */
+
+        .main {
+            display: grid;
+            grid-template-rows: 0.50fr 0.75fr 5fr 1fr;
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+        }
+
+        .upper {
+            display: grid;
+            grid-template-columns: 2fr 1fr 3fr 1fr 2fr;
+            text-align: center;
+            font-size: larger;
+
+        }
+
+        .navbar {
+            border: 0.1mm solid rgb(6, 6, 6);
+            background-color: rgb(91, 163, 211);
+        }
+
+        .middle {
+            display: flex;
+            grid-template-columns: 2fr 2fr;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .sideleft {
+            width: 30%;
+        }
+
+        .sideright {
+            width: 70%;
+        }
+
+        .sideright img {
+            display: grid;
+            height: 40rem;
+            width: 100%;
+        }
+
+        p {
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(6, 6, 6);
+        }
+
+        .formProperty {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="upper">
+            <div class="email">shrishubhmangalamestate@gmail.com</div>
+            <div class="phone">9892811501</div>
+            <div class="space"></div>
+            <div class="space2"></div>
+            <button class="sendemail" onclick="fun1()" id="sendemail">send email</button>
+            </form>
+
+
+        </div>
+        <div class="navbar"></div>
+        <div class="middle">
+            <div class="sideleft">
+                <p>SHRI SHUBH MANGALAM ESTATE is a real estate brokerage entity that has been serving a variety of
+                    property
+                    buying, selling and Investor requirements of individuals across Mumbai. We started our company
+                    operations with a sole motive to make real estate property trading procedures simple and
+                    affordable for all. The company is based in Mumbai (Maharashtra, India) and we serve clients
+                    across residential and commercial sectors. When you get associated with us, right from listing
+                    to managing advertisements and paperwork completion to final settlement, we take care of
+                    everything.
+                    Mr. SHYAM SHARMA is the brain behind the incorporation of Shri Shubh Mangalm Estate. His business
+                    acumen and
+                    ability to foresee the market trends have helped us in serving the area-specific requirements of
+                    the clients with utmost ease. Our flexible approach towards modifying the services and
+                    round-the-clock service support make us a preferred choice of the clients. For buying, selling,
+                    and invest old and new property structures, clients can reach us anytime.
+                </p>
+
+            </div>
+            <div class="sideright">
+                <img src="images/tv.jpg" alt="">
+            </div>
+            <div id="form" class="form">
+                <form action="https://formsubmit.co/reshmasingh0000@gmail.com" method="POST">
+                    Name: <input type="text" name="Name"><br>
+                    Email: <input type="email" name="Email"><br>
+                    Mobile: <input type="number" name="MOBILE"><br>
+                    Password: <input type="password" name="Password"><br>
+                    <button type="submit">submit</button>
+                    <input type="hidden" name="_next" value="https://yourdomain.co/pepperfry.htmxl">
+                </form>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <script>
+        function fun1() {
+
+            var form = document.getElementById("form")
+
+            var btn = document.getElementById("sendemail")
+
+            var form = document.getElementById("form");
+            if (form.style.display == "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>
